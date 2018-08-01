@@ -1,0 +1,21 @@
+{
+  "name": "Angela-Game",
+  "version": "1.0.0",
+  "description": "Implementation of the Angela Game, proposed by Olivetti for the Programma 101 computing machine",
+  "author": "Andrea Biancini <andrea.biancini@gmail.com>",
+  "main": "index",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biancini/Angela-Game.git"
+  },
+  "engines": {
+    "node": ">= 0.6.x"
+  },
+  "files": [
+    "game.js"
+  ],
+  "dependencies": {
+    "readline-sync": ">= 1.4.5"
+  }
+}
