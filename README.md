@@ -11,7 +11,7 @@ Presentato per la prima volta alla grande esposizione dei prodotti per ufficio B
 
 Alla sua presentazione, alla fiera di New York del 1965, il Programma 101 eseguiva il gioco Angela che è qui riproposto.
 
-(Qui)[http://www.piergiorgioperotto.it/] maggiori informazioni sul Programma 101, il primo computer da tavolo (made in Italy).
+[Qui](http://www.piergiorgioperotto.it/) maggiori informazioni sul Programma 101, il primo computer da tavolo (made in Italy).
 
 Regole del gioco
 ----------------
