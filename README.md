@@ -1,7 +1,7 @@
 ANGELA GAME
 ===========
 
-Olivelli Programma 101
+Olivetti Programma 101
 ----------------------
 L'Olivetti Programma 101 (in acronimo P101) è stato un computer sviluppato dalla ditta italiana Olivetti negli anni tra il 1962 e il 1964 e prodotto tra il 1965 e il 1971.
 Presentato per la prima volta alla grande esposizione dei prodotti per ufficio BEMA di New York nell'ottobre 1965, fu progettato dall'ingegnere Pier Giorgio Perotto (in omaggio al quale assunse il soprannome di Perottina) insieme a Giovanni De Sandre e Gastone Garziera. Il designer Mario Bellini le conferì un disegno avveniristico per l'epoca.
