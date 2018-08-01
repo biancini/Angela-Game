@@ -29,13 +29,13 @@ function InizioGioco() {
 
 function checkMeta(x) {
     if ((x == 0) || (x == null)) {
-           console.log("IL GIOCO E' STATO INTERROTTO\nPremere il pulsante Restart Game per ricominciare.");
-           fine = 1;
-           return false;
+        console.log("IL GIOCO E' STATO INTERROTTO.");
+        fine = 1;
+        return false;
     }
     if ((x < 30) || (x > 100) || isNaN(x)) {
-           console.log("META NON VALIDA\nIntrodurre un valore tra 30 e 100.");
-           return false;
+        console.log("META NON VALIDA - Introdurre un valore tra 30 e 100.");
+        return false;
     } 
     return true;
 }
@@ -62,7 +62,7 @@ function setPuntata(valore) {
         reg_M = parseInt(valore);
         primapuntata = 0;
         RV2();
-	    aggiungi_riga_punteggi();
+        aggiungi_riga_punteggi();
         if (fine == 0) {
             controllo_fine_gioco_P();
         }
@@ -75,11 +75,11 @@ function controllaPuntata(valore) {
     }
         
     if (((valore < 0) || (valore > 6)) && (primapuntata == 1)) {
-        console.log("ANGELA GAME\nPUNTATA NON VALIDA\nReimpostare la puntata.");
+        console.log("PUNTATA NON VALIDA - Reimpostare la puntata.");
         return 0;
     }
     if (((valore < 1) || (valore > 6)) && primapuntata == 0) {
-        console.log("ANGELA GAME\nPUNTATA NON VALIDA\nReimpostare la puntata.");
+        console.log("PUNTATA NON VALIDA - Reimpostare la puntata.");
         return 0;
     }
 
@@ -217,7 +217,7 @@ function RV3() {
     Scambio("B2");
     //stampa totale A
     puntx = reg_B2;
-    //controllo fine gioco A      (interlinea addizionale ?)
+    //controllo fine gioco A
     controllo_fine_gioco_A();
     if (fine == 1)
         return;
@@ -369,7 +369,7 @@ function RY3() {
         return;
     }
     //se Dev |A - P| = A segnala Puntata A non Valida
-    console.log("NON BARARE\nReimpostare la puntata.");
+    console.log("NON BARARE - Reimpostare la puntata.");
     isPuntataValida = false;
 }
 
@@ -437,7 +437,7 @@ function controllo_fine_gioco_A() {
         fine = 1;
         return;
     } else if (reg_A < 0) {
-    console.log("HAI PERSO\nPremere Restart Game per ricominciare a giocare.");
+    console.log("HAI PERSO!!!");
         fine = 1;
         return;
     }
@@ -448,22 +448,22 @@ function controllo_fine_gioco_P() {
     Rich("B1");
     Sottr("B2");
     if (reg_A == 0) {
-        console.log("HAI PERSO\nPremere Restart Game per ricominciare a giocare.");
+        console.log("HAI PERSO!!!");
         fine = 1;
     } else if (reg_A < 0) {
-        console.log("HAI VINTO\nPremere Restart Game per ricominciare a giocare.");
+        console.log("HAI VINTO!!!");
         fine = 1;
     }
 }
 
-function Gioca() {
-    InizioGioco();
-    setMeta();
-
-    while (fine == 0) {
-        var x = parseInt(readline.question('Inserisci la puntata: '));
-        setPuntata(x);
+module.exports = {
+    Gioca: function() {
+        InizioGioco();
+        setMeta();
+    
+        while (fine == 0) {
+            var x = parseInt(readline.question('Inserisci la puntata: '));
+            setPuntata(x);
+        }
     }
 }
-
-Gioca();
