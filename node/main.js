@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
 
-var game = require('./angela.js');
+var game = new require('./angela.js')();
 
 game.Gioca();
