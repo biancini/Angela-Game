@@ -106,82 +106,60 @@ function Programma101() {
         },
 
         riga_col_U: function(val) {
-            if (val == "A") {
-                reg_A = reg;
-            } else if (val == "M") {
-                reg_M = reg;
-            } else if (val == "R") {
-                reg_R = reg;
-            } else if (val == "B1"){
-                reg_B1 = reg;
-            } else if (val == "B2") {
-                reg_B2 = reg;
-            } else if (val == "C1") {
-                reg_C1 = reg;
-            } else if (val == "C2") {
-                reg_C2 = reg;
-            } else if (val == "D1") {
-                reg_D1 = reg;
+            switch(val) {
+                case "A":
+                    reg_A = reg;
+                    break;
+                case "M":
+                    reg_M = reg;
+                    break;
+                case "R":
+                    reg_R = reg;
+                    break;
+                case "B1":
+                    reg_B1 = reg;
+                    break;
+                case "B2":
+                    reg_B2 = reg;
+                    break;
+                case "C1":
+                    reg_C1 = reg;
+                    break;
+                case "C2":
+                    reg_C2 = reg;
+                    break;
+                case "D1":
+                    reg_D1 = reg;
+                    break;
             }
         },
 
         riga_col_E: function(val) {
-            if (val == "A") {
-                reg = reg_A;
-            } else if (val == "M") {
-                reg = reg_M;
-            } else if (val == "R") {
-                reg = reg_R;
-            } else if (val == "B1") {
-                reg = reg_B1;
-            } else if (val == "B2") {
-                reg = reg_B2;
-            } else if (val == "C1") {
-                reg = reg_C1;
-            } else if (val == "C2") {
-                reg = reg_C2;
-            } else if (val == "D1") {
-                reg = reg_D1;
-            }
-        },
-
-        riga_col_U: function(val) {
-            if (val == "A") {
-                reg_A = reg;
-            } else if (val == "M") {
-                reg_M = reg;
-            } else if (val == "R") {
-                reg_R = reg;
-            } else if (val == "B1"){
-                reg_B1 = reg;
-            } else if (val == "B2") {
-                reg_B2 = reg;
-            } else if (val == "C1") {
-                reg_C1 = reg;
-            } else if (val == "C2") {
-                reg_C2 = reg;
-            } else if (val == "D1") {
-                reg_D1 = reg;
-            }
-        },
-
-        riga_col_E: function(val) {
-            if (val == "A") {
-                reg = reg_A;
-            } else if (val == "M") {
-                reg = reg_M;
-            } else if (val == "R") {
-                reg = reg_R;
-            } else if (val == "B1") {
-                reg = reg_B1;
-            } else if (val == "B2") {
-                reg = reg_B2;
-            } else if (val == "C1") {
-                reg = reg_C1;
-            } else if (val == "C2") {
-                reg = reg_C2;
-            } else if (val == "D1") {
-                reg = reg_D1;
+            switch(val) {
+                case "A":
+                    reg = reg_A;
+                    break;
+                case "M":
+                    reg = reg_M;
+                    break;
+                case "R":
+                    reg = reg_R;
+                    break;
+                case "B1":
+                    reg = reg_B1;
+                    break;
+                case "B2":
+                    reg = reg_B2;
+                    break;
+                case "C1":
+                    reg = reg_C1;
+                    break;
+                case "C2":
+                    reg = reg_C2;
+                    break;
+                case "D1":
+                    reg = reg_D1;
+                    break;
             }
         }
     }
